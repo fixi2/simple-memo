@@ -13,6 +13,7 @@
 		CE959AFA258F7C4700C61158 /* JunbMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE959AF8258F7C4700C61158 /* JunbMemo.xcdatamodeld */; };
 		CE959AFC258F7C4A00C61158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE959AFB258F7C4A00C61158 /* Assets.xcassets */; };
 		CE959AFF258F7C4A00C61158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE959AFD258F7C4A00C61158 /* LaunchScreen.storyboard */; };
+		CEE4B9372592231F00E85DA1 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4B9362592231F00E85DA1 /* model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CE959AFB258F7C4A00C61158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE959AFE258F7C4A00C61158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE959B00258F7C4A00C61158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE4B9362592231F00E85DA1 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		CE959AEE258F7C4700C61158 /* JunbMemo */ = {
 			isa = PBXGroup;
 			children = (
+				CEE4B9352592230200E85DA1 /* Model */,
 				CE959AEF258F7C4700C61158 /* AppDelegate.swift */,
 				CE959AF1258F7C4700C61158 /* SceneDelegate.swift */,
 				CE959AF5258F7C4700C61158 /* Main.storyboard */,
@@ -65,6 +68,14 @@
 				CE959AF8258F7C4700C61158 /* JunbMemo.xcdatamodeld */,
 			);
 			path = JunbMemo;
+			sourceTree = "<group>";
+		};
+		CEE4B9352592230200E85DA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4B9362592231F00E85DA1 /* model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				CE959AF0258F7C4700C61158 /* AppDelegate.swift in Sources */,
 				CE959AFA258F7C4700C61158 /* JunbMemo.xcdatamodeld in Sources */,
 				CE959AF2258F7C4700C61158 /* SceneDelegate.swift in Sources */,
+				CEE4B9372592231F00E85DA1 /* model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
