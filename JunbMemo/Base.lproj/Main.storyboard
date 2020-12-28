@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,7 +48,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Simple Memo" id="S8X-vc-rDb">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SiG-L8-T2S"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SiG-L8-T2S">
+                            <connections>
+                                <segue destination="O5A-Qx-Dwe" kind="presentation" id="udG-Yd-mda"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSN-tG-n1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -69,6 +74,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYJ-wx-4hv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-706" y="195"/>
+        </scene>
+        <!--New memo-->
+        <scene sceneID="2zC-gV-gz2">
+            <objects>
+                <viewController id="RRR-8m-qP7" customClass="ComposeViewController" customModule="JunbMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Feq-Yc-pId">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="stP-p7-RDM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="stP-p7-RDM" firstAttribute="leading" secondItem="Y1Z-WI-dqC" secondAttribute="leading" id="09Z-Fk-MAj"/>
+                            <constraint firstItem="stP-p7-RDM" firstAttribute="top" secondItem="Feq-Yc-pId" secondAttribute="top" id="2B3-fT-dTZ"/>
+                            <constraint firstAttribute="bottom" secondItem="stP-p7-RDM" secondAttribute="bottom" id="Pvf-gm-AzM"/>
+                            <constraint firstItem="stP-p7-RDM" firstAttribute="trailing" secondItem="Y1Z-WI-dqC" secondAttribute="trailing" id="h6q-hR-gKM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y1Z-WI-dqC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New memo" id="yiI-dr-Rnx">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cik-Qp-xgd"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="O1h-C6-Rtp"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEp-q9-CrH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2084.057971014493" y="-412.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TzY-ui-qSl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O5A-Qx-Dwe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WfN-AH-4Q3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RRR-8m-qP7" kind="relationship" relationship="rootViewController" id="gJZ-jU-QIz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78S-Qw-hiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.913043478261" y="-412.5"/>
         </scene>
     </scenes>
 </document>
