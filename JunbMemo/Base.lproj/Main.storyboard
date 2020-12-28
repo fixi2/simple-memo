@@ -102,7 +102,11 @@
                         <viewLayoutGuide key="safeArea" id="Y1Z-WI-dqC"/>
                     </view>
                     <navigationItem key="navigationItem" title="New memo" id="yiI-dr-Rnx">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cik-Qp-xgd"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cik-Qp-xgd">
+                            <connections>
+                                <action selector="close:" destination="RRR-8m-qP7" id="7Zt-hk-R7f"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="O1h-C6-Rtp"/>
                     </navigationItem>
                 </viewController>
