@@ -38,3 +38,61 @@ dismiss(animated: bool, completion: (() -> Void)?)
 - model을 닫을때 사용하는 메서드
 - animated에 true를 주면 화면을 닫을 때 전환 애니메이션을 사용
 - 화면을 닫은 다음에 실행하고 싶은 코드를 두번째 파라미터에 클로저로 전달
+
+### UIAlertController
+```
+UIAlertController(title: String, message: String, preferredStyle: UIAlertController.Style)
+```
+
+AlertStyle
+1. Alert View
+  - 화면 중간에 나오는 거
+  - 간단한 정보나 두개중 하나 고를때 정도
+2. Action Sheet
+  - 화면 하단에서 나오는거
+  - 세개 이상 옵션중 하나 선택할 때 사용
+
+### UIAlertAction
+```
+UIAlertAction(title: String, style:UIAlertAction.Style, handler: ((UIAlertAction) -> Void)?)
+```
+
+- 버튼 생성하는 코드, title, style, handler입력 가능
+- UIAlertController에 추가해주어야 함
+  - `{UIAlertController}.addAction({UIAlertAction})`
+
+### present
+```
+present(alert, animated, completion)
+```
+- 생성한 UIAlertController를 화면에 나타내는 메서드
+- completion은 완료되었을때 수행할 콜백함수인듯하다.
+
+### table view reload
+```
+tableView.reloadData()
+```
+
+### #function
+```
+print(#function)
+```
+- 함수이름 출력, 디버깅할때 쓰기 편할듯하다.
+
+### window
+```
+var window: UIWindow?
+```
+- 이게 뭘까?
+
+### Notification
+Notification선언하고, 필요한 시점에 noti (broadcast)
+- noti를 받기 원하는 곳에 observer 작성
+
+### 스레드
+ios에서는 스레드를 직접 처리하지 않고, dispatch queue나 operation queue에서 처리한다.
+
+### observer 해제
+viewDidLoad()에서 추가한 옵저버는 View가 화면에서 사라지기 전에 해제하거나, 소멸자에서 해제한다.
+
+
