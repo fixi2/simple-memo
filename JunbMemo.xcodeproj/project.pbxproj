@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE729ABE259B81E00058189C /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE729ABD259B81E00058189C /* UIViewController+Alert.swift */; };
 		CE959AF0258F7C4700C61158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE959AEF258F7C4700C61158 /* AppDelegate.swift */; };
 		CE959AF2258F7C4700C61158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE959AF1258F7C4700C61158 /* SceneDelegate.swift */; };
 		CE959AF7258F7C4700C61158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE959AF5258F7C4700C61158 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE729ABD259B81E00058189C /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		CE959AEC258F7C4700C61158 /* JunbMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JunbMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE959AEF258F7C4700C61158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE959AF1258F7C4700C61158 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				CE959AF8258F7C4700C61158 /* JunbMemo.xcdatamodeld */,
 				CEE4B9382592247100E85DA1 /* MemoListTableViewController.swift */,
 				CE9D906A259A3D5F00EF7E20 /* ComposeViewController.swift */,
+				CE729ABD259B81E00058189C /* UIViewController+Alert.swift */,
 			);
 			path = JunbMemo;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				CE9D906B259A3D5F00EF7E20 /* ComposeViewController.swift in Sources */,
 				CE959AF2258F7C4700C61158 /* SceneDelegate.swift in Sources */,
 				CEE4B9372592231F00E85DA1 /* model.swift in Sources */,
+				CE729ABE259B81E00058189C /* UIViewController+Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
