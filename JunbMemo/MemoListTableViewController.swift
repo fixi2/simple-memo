@@ -32,6 +32,22 @@ class MemoListTableViewController: UITableViewController {
             NotificationCenter.default.removeObserver(token)
         }
     }
+    
+    // segue가 연결된 화면을 생성하고, 화면을 호출하기 직전에 호출된다.
+    // 이 경우에는, cell이 segue를 생성하는 sender가 된다.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        /*
+            1. sender를 UITableViewCell로 타입 캐스팅
+            2. binding된 cell을 tableView로 전달해서 indexPath를 가져온다
+            3. 인자로 주어진 segue에서 목록화면과, 보기화면에 접근할 수 있다.
+                segue.source , segue.destination
+         */
+        if let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) {
+            if let vc = segue.destination as? DetailViewController {
+                vc.memo = Memo.dummyMemoList[indexPath.row]
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,6 +10,19 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    // View Controller가 초기화 되는 시점에는 값이 존재하지 않기 때문에 옵셔널로 선언
+    // 이전화면에서 전달한 메모가 저장된다.
+    var memo: Memo?
+    
+    let formatter: DateFormatter = {
+        let f = DateFormatter()
+        f.dateStyle = .long
+        f.timeStyle = .short
+        f.locale = Locale(identifier: "Ko_kr")
+        
+        return f
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,10 +55,14 @@ extension DetailViewController: UITableViewDataSource {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "memoCell", for: indexPath)
             
+            cell.textLabel?.text = memo?.content
+            
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "dateCell", for: indexPath)
-        
+            
+            cell.textLabel?.text = formatter.string(for: memo?.insertDate)
+            
             return cell
         default:
             fatalError()
