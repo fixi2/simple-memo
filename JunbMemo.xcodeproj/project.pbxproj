@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE270CA025A1B33200A99C42 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE270C9F25A1B33200A99C42 /* DetailViewController.swift */; };
 		CE729ABE259B81E00058189C /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE729ABD259B81E00058189C /* UIViewController+Alert.swift */; };
 		CE959AF0258F7C4700C61158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE959AEF258F7C4700C61158 /* AppDelegate.swift */; };
 		CE959AF2258F7C4700C61158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE959AF1258F7C4700C61158 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE270C9F25A1B33200A99C42 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CE729ABD259B81E00058189C /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		CE959AEC258F7C4700C61158 /* JunbMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JunbMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE959AEF258F7C4700C61158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				CEE4B9382592247100E85DA1 /* MemoListTableViewController.swift */,
 				CE9D906A259A3D5F00EF7E20 /* ComposeViewController.swift */,
 				CE729ABD259B81E00058189C /* UIViewController+Alert.swift */,
+				CE270C9F25A1B33200A99C42 /* DetailViewController.swift */,
 			);
 			path = JunbMemo;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				CE959AF2258F7C4700C61158 /* SceneDelegate.swift in Sources */,
 				CEE4B9372592231F00E85DA1 /* model.swift in Sources */,
 				CE729ABE259B81E00058189C /* UIViewController+Alert.swift in Sources */,
+				CE270CA025A1B33200A99C42 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
