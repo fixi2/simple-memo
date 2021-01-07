@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE270CA025A1B33200A99C42 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE270C9F25A1B33200A99C42 /* DetailViewController.swift */; };
+		CE555DE525A75DAC00A87AB2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE555DE425A75DAC00A87AB2 /* DataManager.swift */; };
 		CE729ABE259B81E00058189C /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE729ABD259B81E00058189C /* UIViewController+Alert.swift */; };
 		CE959AF0258F7C4700C61158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE959AEF258F7C4700C61158 /* AppDelegate.swift */; };
 		CE959AF2258F7C4700C61158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE959AF1258F7C4700C61158 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		CE270C9F25A1B33200A99C42 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE555DE425A75DAC00A87AB2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CE729ABD259B81E00058189C /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		CE959AEC258F7C4700C61158 /* JunbMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JunbMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE959AEF258F7C4700C61158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE555DE325A75D9100A87AB2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CE555DE425A75DAC00A87AB2 /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		CE959AE3258F7C4700C61158 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		CE959AEE258F7C4700C61158 /* JunbMemo */ = {
 			isa = PBXGroup;
 			children = (
+				CE555DE325A75D9100A87AB2 /* Data */,
 				CEE4B9352592230200E85DA1 /* Model */,
 				CE959AEF258F7C4700C61158 /* AppDelegate.swift */,
 				CE959AF1258F7C4700C61158 /* SceneDelegate.swift */,
@@ -168,6 +179,7 @@
 				CE959AF2258F7C4700C61158 /* SceneDelegate.swift in Sources */,
 				CEE4B9372592231F00E85DA1 /* model.swift in Sources */,
 				CE729ABE259B81E00058189C /* UIViewController+Alert.swift in Sources */,
+				CE555DE525A75DAC00A87AB2 /* DataManager.swift in Sources */,
 				CE270CA025A1B33200A99C42 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
