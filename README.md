@@ -95,4 +95,32 @@ ios에서는 스레드를 직접 처리하지 않고, dispatch queue나 operatio
 ### observer 해제
 viewDidLoad()에서 추가한 옵저버는 View가 화면에서 사라지기 전에 해제하거나, 소멸자에서 해제한다.
 
+### Table View 크기
+Navigation Bar와 함께 쓸때, Navigation Bar높이만큼 여백이 자동으로 추가됨
 
+### Table View Cell 강조색상 제거
+attribute inspector -> selection : none
+
+### Cell 줄바꿈
+- table view는 cell에 표시되는 내용에 맞게 cell의 높이를 자동으로 조절한다.
+- Label의 Lines옵션을 0으로 한다.
+- Line Break -> Word Wrap
+
+### Core Data
+
+- CoreData를 사용할 떄는 Entity를 Class로 사용해야 한다.
+- AppDelegate에 있는 persistentConatiner, saveContext를 DataManager.swift에 옮김
+
+- coreData에서 사용하는 대부분의 작업은 context가 담당한다.
+
+- sceneDelegate에서 sceneDidEnterBackground() 메서드 변경해주어야 함
+
+- core data가 만들어주는 클래스는 생성자에 context를 전달해 주어야 한다. 
+
+- 실제 DB에 저장하기 위해서는 context를 저장해야 함 -> saveContext()
+
+- 구현후 메모 생성했는데, 리스트에 나오지 않음
+  - didLoad에서 tableView.reloadData()를 했는데 안나옴
+  - 이유는 tableView는 DateManager클래스의 memoList에서 메모들을 가져오는데 이게 업데이트가 안됨
+  - DidLoad에서 DataManager의 memoList업데이트 할 수 있고
+  - 더 간단하게 하면 메모 생성(addMemo)에서 생성하고, saveContext하기 전에 memoList에 insert (불필요한 DB작업 생략되서 좀 더 효율적이라고 함 )
