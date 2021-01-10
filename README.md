@@ -124,3 +124,6 @@ attribute inspector -> selection : none
   - 이유는 tableView는 DateManager클래스의 memoList에서 메모들을 가져오는데 이게 업데이트가 안됨
   - DidLoad에서 DataManager의 memoList업데이트 할 수 있고
   - 더 간단하게 하면 메모 생성(addMemo)에서 생성하고, saveContext하기 전에 memoList에 insert (불필요한 DB작업 생략되서 좀 더 효율적이라고 함 )
+
+  ### modal pull down할 경우 이벤트 처리
+  ios13부터 사용 가능 delegate써서 어떻게 하는데 자세한건 나중에 정리 =ㅋ
