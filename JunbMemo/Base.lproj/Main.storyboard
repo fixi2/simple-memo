@@ -153,7 +153,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="na4-s2-0ha">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem title="Item" id="GRs-VL-R5O"/>
+                                    <barButtonItem systemItem="compose" id="GRs-VL-R5O">
+                                        <connections>
+                                            <segue destination="O5A-Qx-Dwe" kind="presentation" id="a7s-5w-DVZ"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TnW-RH-MXk">
@@ -213,10 +217,16 @@
                         <viewLayoutGuide key="safeArea" id="ykS-Lc-Hvt"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Y0u-N0-neO"/>
+                    <connections>
+                        <outlet property="memoTableView" destination="TnW-RH-MXk" id="Pbf-iX-yO2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="95e-eZ-6ew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1173.913043478261" y="329.46428571428572"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="a7s-5w-DVZ"/>
+    </inferredMetricsTieBreakers>
 </document>
