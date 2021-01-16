@@ -16,6 +16,15 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var memoTableView: UITableView!
     
+    @IBAction func share(_ sender: Any) {
+        guard let memo = memo?.content else { return }
+        
+        let vc = UIActivityViewController(activityItems: [memo], applicationActivities: nil)
+        
+        present(vc, animated: true, completion: nil)
+    }
+    
+    
     @IBAction func deleteMemo(_ sender: Any) {
         // 사용자에게 한번 더 확인
         let alert = UIAlertController(title: "삭제 확인", message: "메모를 삭제할까요?", preferredStyle: .alert)
